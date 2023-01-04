@@ -20,3 +20,123 @@ a {
 main{
   height: 100vh;
 }
+
+
+/* from bottom up */
+.lineUp {
+  animation: 4s anim-lineUp ease-out ;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* from left to  right */
+.lineRight {
+  animation: 4s anim-lineRight ease-out ;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes anim-lineRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+/* from  right  to left  */
+.lineLeft {
+  animation: 4s anim-lineLeft ease-out ;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes anim-lineLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* from  up to bottom */
+.lineDown {
+  animation: 4s anim-lineDown ease-out ;
+  animation-iteration-count: 1;
+
+}
+
+@keyframes anim-lineDown {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* text on image */
+
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  width: auto;
+  top: 30%;
+  font-size: 28px;
+  right: 50%;
+  left: 10%;
+}
