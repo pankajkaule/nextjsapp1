@@ -10,7 +10,7 @@ export default function About() {
       <Navbar />
 
       <div className="flex justify-center items-center h-screen	">
-        <span className="text-4xl ">About us</span>
+        <span className="text-4xl lineUp ">About us</span>
       </div>
       <Footer/>
     </>
